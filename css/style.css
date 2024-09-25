@@ -1,0 +1,326 @@
+body {
+    font-family: Arial, Verdana, sans-serif;
+    background-color: black;
+    background-image: url("../MEDIA/bg2.jpg");
+    background-position: 10px 0, left bottom;
+    margin-bottom: 100px;
+}
+
+
+h1,h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+p{text-align:left}
+
+header, main, footer{
+    width: 75%;
+    margin: 0 auto 0 auto;
+    background-color: rgb(198, 124, 198);
+    padding: 15px;
+}
+
+
+
+header{
+    border-radius: 15px 15px 0 0;
+    position: relative;
+}
+
+footer{
+    border-radius: 0 0 10px 10px;
+}
+
+article{
+    margin: 0 2em;
+    border-bottom: 1px dotted rgb(231, 186, 209);
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+footer{
+    text-align: center;
+    color: rgb(2, 14, 25);
+}
+
+
+
+#content-home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content-character table {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+td {
+    text-align: center;
+    padding: 8px; 
+    border: 1px solid black; 
+}
+td:hover{
+    opacity: 70%;
+    background-color:rgb(184, 85, 184);
+}
+
+#content-form #form{
+    width: 80%;
+}
+/*
+#content-characters{
+    img{
+        width: 30%;
+        height: 30%;
+    }
+}
+#content-characters{
+    article{
+        width: 80%;
+    }
+}
+*/
+
+#video{
+    width: 80%;
+    text-align: center;
+}
+#video video{
+    width: 100%;
+}
+
+/* kep meretezes */
+#hellokittyandfriendsimg{
+    width: 50%;
+}
+
+#hellokittypainting{
+    width: 20%;
+    display: block; 
+    margin: 0 auto; 
+}
+
+#hellokittyandbf{
+    width: 20%;
+    height: 20%;
+    display: block; 
+    margin: 0 auto; 
+}
+
+#more-on-sanrio-box{
+    width: 100%;
+}
+
+
+
+
+article {
+    width: 70%; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+}
+
+article img{
+    width: 40%;
+}
+
+#actual{
+    color: #760b94;
+    font-style: italic;
+    text-shadow: 2px 2px 4px rgba(222, 50, 238, 0.5);
+}
+
+
+
+
+
+
+
+
+
+/*eltakarom a jump to content es cuccot*/
+
+
+header #styleswitch{
+    text-align: left;
+    border: none;
+}
+
+
+
+header {
+    text-align: center; 
+}
+
+header #logo{
+    width: 50%;
+    display: block; 
+    margin: 0 auto; 
+}
+
+#current-page-title{
+    text-align: left;
+    padding-left: 13%;
+    color: rgb(177, 94, 203)
+}
+
+#menuList{
+    flex-direction: row;
+}
+
+
+/* a menu: */
+
+#menu{
+    background-color: rgb(218, 170, 232);
+    text-align: center;
+    padding: 15px;
+    width: 75%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    text-align: center;
+}
+
+/* ezzel adok spacet kozejuk: */
+#menu ul li {
+    margin-right: 20px; 
+    text-align: center;
+}
+
+/* linkek szinezese */
+a:link {
+    color: rgb(9, 9, 114); 
+}
+a:visited {
+    color: #895897; 
+    opacity: 0.7; 
+}
+
+table caption{
+    color: rgb(48, 9, 54);
+    text-align: center;
+}
+
+
+
+
+
+.fluid-rounded{
+    display: flex;
+}
+
+.carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    filter: invert(100%);
+}
+
+
+/* GYENGYENLATO VERZIO - KONTRASZTJAVITAS*/
+body.large{
+    font-size: 2rem !important;
+    background-image: none !important;
+    background-color: white !important;
+}
+
+body.large table{
+    font-size: initial !important;
+}
+   
+body.large #current-page-title{
+    color:#760b94 !important;
+}
+body.large header,main,footer{
+    background-color: #e2d0e6;
+}
+body.large #actual{
+    text-shadow: none !important;
+    color: #370844;
+}
+   
+
+
+/*
+body.large {
+    font-size : 2rem !important ;
+    background-image : none !important ;
+    background-color : white !important ;
+} 
+*/
+
+#content-characters table {
+    width: 80%;
+}
+
+#article-container{
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-gap: 10px;
+}
+
+@media screen and (max-width: 700px){
+    #article-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    li{
+        margin-bottom: 5px;
+    }
+    #logo {
+        width: 80%;
+    }
+    #current-page-title{
+        font-size: 50%;
+        width: 85%;
+    }
+    header #website-title{
+        font-size: 60%;
+    }
+    footer{
+        font-size: 50%;
+    }
+}
+/* reszpozivitas: */
+@media screen and (max-width: 500px){
+
+    #menuList{
+        flex-direction: column;
+    }
+    li{
+        margin-bottom: 5px;
+    }
+    #logo {
+        width: 80%;
+    }
+    #current-page-title{
+        font-size: 50%;
+    }
+    header #website-title{
+        font-size: 60%;
+    }
+    footer{
+        font-size: 50%;
+    }
+
+}

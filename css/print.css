@@ -1,0 +1,101 @@
+/* nyomtatasra: */
+@media print {
+    html {
+      background: white;
+    }
+    body {
+      width: 100%;
+      font-family: "Times New Roman", Times, serif;
+      background: white;
+      min-width: initial;
+      max-width: initial;
+      box-shadow: initial;
+    }
+
+    aside{
+        display: none;
+    }
+  
+    nav {
+      display: none;
+    }
+  
+    a:after {
+      content: " (" attr(href) ")";
+    }
+
+    #current-page-title{
+        color: black;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    footer{
+        color: black;
+    }
+
+    #video{
+        display: none;
+    }
+
+    header{
+        display: none;
+    }
+
+    #content-characters img{
+        width: 25%;
+        height: 25%;
+    }
+
+    #content-home img{
+        width: 30%;
+        height: 30%;
+    }
+
+    #content-aboutme img{
+        width: 19%;
+        height: 19%;
+    }
+
+    footer {
+        display: none;
+    }
+
+    a:link{
+        color: black;
+    }
+
+    a:visited{
+        color: black;
+    }
+
+
+
+    
+
+    header, main, footer{
+        width: 90%;
+        background-color: rgb(228, 201, 228);
+    
+    }
+
+    #carouselExample{
+        display: none;
+    }
+
+    caption{
+        display: none;
+    }
+    table{
+        border: 1px solid black;
+    }
+    table td, table tr{
+        border: 1px solid black;
+    }
+  }
+  
+  article{
+    width: 100%;
+  }
